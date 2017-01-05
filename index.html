@@ -111,10 +111,7 @@
         });
       }
     </script>
-    <script async defer src="https://apis.google.com/js/api.js" 
-      onload="this.onload=function(){};handleClientLoad()" 
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
+  
     <script type="text/javascript"
 	src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -124,10 +121,7 @@
 	});
 
 	// Set a callback to run when the Google Visualization API is loaded.
-	google.charts.setOnLoadCallback(drawSheetName);
-
-	google.charts.setOnLoadCallback(drawGraph);
-	google.charts.setOnLoadCallback(drawDashboard);
+	
 	
 function drawDashboard() {
 		var queryString = encodeURIComponent('SELECT B, C, D, S  where R > 45');
@@ -279,5 +273,12 @@ function drawDashboard() {
 	<br>
 
 	<div id="table_div"></div>
+	  
+	    <script async defer src="https://apis.google.com/js/api.js" 
+      onload="this.onload=function(){};handleClientLoad()" 
+      onreadystatechange="if (this.readyState === 'complete') this.onload();google.charts.setOnLoadCallback(drawSheetName);google.charts.setOnLoadCallback(drawGraph);google.charts.setOnLoadCallback(drawDashboard);">
+    </script>
+	  
+	  
   </body>
 </html>
