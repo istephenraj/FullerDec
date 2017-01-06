@@ -127,8 +127,7 @@ function drawDashboard() {
 		var queryString = encodeURIComponent('SELECT B, C, D, S  where R > 45');
 		var query = new google.visualization.Query(
 				'https://docs.google.com/a/fuller.edu/spreadsheets/d/1KTH4a3CEKTdlPrTNSijkikmVKYSFp09ESLa_KnqU9AE/edit?usp=sharing&headers=2&sheet=Summary&tq='
-				 https://docs.google.com/a/fuller.edu/spreadsheets/d/1KTH4a3CEKTdlPrTNSijkikmVKYSFp09ESLa_KnqU9AE/edit?usp=sharing
-						+ queryString);
+					+ queryString);
 		query.send(handleTestQueryResponse);
 	}
 
