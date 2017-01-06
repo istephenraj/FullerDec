@@ -32,11 +32,13 @@ function makeApiCall() {
   // URL with a private spreadsheet.
   
   
-  var tqUrl = ''https://docs.google.com/a/fuller.edu/spreadsheets/d/1KTH4a3CEKTdlPrTNSijkikmVKYSFp09ESLa_KnqU9AE/edit?usp=sharing&headers=2&sheet=Summary&tq='' +
+  /*var tqUrl = ''https://docs.google.com/a/fuller.edu/spreadsheets/d/1KTH4a3CEKTdlPrTNSijkikmVKYSFp09ESLa_KnqU9AE/edit?usp=sharing&headers=2&sheet=Summary&tq='' +
       '&tqx=responseHandler:handleTqResponse' +
       '&access_token=' + encodeURIComponent(gapi.auth.getToken().access_token);
-
-  document.write('<script src="' + tqUrl +'" type="text/javascript"></script>');
+*/
+  
+  //document.write('<script src="' + tqUrl +'" type="text/javascript"></script>');
+  document.write('Here again');
 }
 
 function handleTqResponse(resp) {
