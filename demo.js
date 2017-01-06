@@ -30,9 +30,10 @@ function makeApiCall() {
   // Note: The below spreadsheet is "Public on the web" and will work
   // with or without an OAuth token.  For a better test, replace this
   // URL with a private spreadsheet.
-  var tqUrl = 'https://docs.google.com/spreadsheets' +
-      '/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq' +
-      '?tqx=responseHandler:handleTqResponse' +
+  
+  
+  var tqUrl = ''https://docs.google.com/a/fuller.edu/spreadsheets/d/1KTH4a3CEKTdlPrTNSijkikmVKYSFp09ESLa_KnqU9AE/edit?usp=sharing&headers=2&sheet=Summary&tq='' +
+      '&tqx=responseHandler:handleTqResponse' +
       '&access_token=' + encodeURIComponent(gapi.auth.getToken().access_token);
 
   document.write('<script src="' + tqUrl +'" type="text/javascript"></script>');
